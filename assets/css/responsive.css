@@ -2689,7 +2689,7 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main-menu__top-inner {
-        padding: 7px 15px 8px;
+        padding: 10px 15px 10px;
     }
 
     .main-menu__contact-list li:last-child {
