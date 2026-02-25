@@ -1,0 +1,122 @@
+<!-- Booking One Start -->
+<section class="booking-one">
+    <div class="booking-one__wrap">
+        <div class="booking-one__bg" style="background-image: url(assets/images/backgrounds/booking-one-bg.jpg);">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-5">
+                    <div class="booking-one__left">
+                        <div class="booking-one__img wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                            <img src="assets/images/resources/booking-one-img-1.png" alt="">
+                        </div>
+                        <div class="booking-one__shape-1 float-bob-x">
+                            <img src="assets/images/shapes/booking-one-shape-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <div class="booking-one__right wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                        <div class="booking-one__content">
+                            <div class="booking-one__title-box">
+                                <div class="booking-one__title-shape"
+                                    style="background-image: url(assets/images/shapes/book-one-title-shape-3.png);">
+                                </div>
+                                <h3 class="booking-one__title">Booking Mobil</h3>
+                            </div>
+                            <form class="contact-form-validated booking-one__form" action="assets/inc/sendemail.php"
+                                method="post" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="booking-one__input-box">
+                                            <p class="booking-one__input-title"> <span class="icon-pin-2"></span>
+                                                Pickup</p>
+                                            <div class="select-box">
+                                                <select class="selectmenu wide">
+                                                    <option selected="selected">Pilih Lokasi</option>
+                                                    <option>Bandara Soekarno Hatta</option>
+                                                    <option>Bandara Halim Perdana Kusuma</option>
+                                                    <option>RCN Garasi</option>
+                                                    <!-- <option>Bandara Ngurah Rai</option>
+                                                            <option>Bandara Adisutjipto</option> -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="booking-one__input-box">
+                                            <p class="booking-one__input-title"> <span class="icon-pin-2"></span>
+                                                Drop of</p>
+                                            <div class="select-box">
+                                                <select class="selectmenu wide">
+                                                    <option selected="selected">Pilih Lokasi</option>
+                                                    <option>Jakarta Barat</option>
+                                                    <option>Jakarta Timur</option>
+                                                    <option>Jakarta Selatan</option>
+                                                    <option>Jakarta Utara</option>
+                                                    <option>Tangerang</option>
+                                                    <option>Tangerang Selatan</option>
+                                                    <option>Tangerang Kabupaten</option>
+                                                    <option>Bekasi</option>
+                                                    <option>Bandara Soekarno Hatta</option>
+                                                    <option>Bandara Halim Perdana Kusuma</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="booking-one__input-box">
+                                            <p class="booking-one__input-title"> <span class="icon-cuv"></span>
+                                                Pilih tipe series Mobil</p>
+                                            <div class="select-box">
+                                                <select class="selectmenu wide">
+                                                    <option selected="selected">Tipe Series Mobil
+                                                    </option>
+                                                    <option>Toyota</option>
+                                                    <option>Honda</option>
+                                                    <option>Suzuki</option>
+                                                    <option>Daihatsu</option>
+                                                    <option>Mitsubishi</option>
+                                                    <option>Mercedes-Benz</option>
+                                                    <option>BMW</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="booking-one__input-box">
+                                            <p class="booking-one__input-title"> <span class="icon-date"></span>
+                                                Tanggal</p>
+                                            <input type="text" placeholder="mm/dd/yyy" name="date" id="datepicker">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="booking-one__btn-box">
+                                            <button type="button" onclick="sendToWhatsApp()" class="thm-btn">
+                                                Book Now <span class="fas fa-arrow-right"></span>
+                                            </button>
+
+                                            <script>
+                                                function sendToWhatsApp() {
+                                                    var date = document.querySelector('[name="date"]').value;
+
+                                                    var message = "Halo RCN Garage,%0ATanggal: " + date;
+
+                                                    var phoneNumber = "62857 9929 0127"; // Ganti dengan nomor WhatsApp tujuan
+                                                    window.open("https://wa.link/k7zpw3?phone=" + phoneNumber + "&text=" + message, "Halo kak, aku mau booking mobilnya. Berikut detailnya:%0A" + message);
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Booking One End -->
